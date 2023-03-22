@@ -3,30 +3,24 @@ package org.levelup.lesson3;
 public class ArrayExamples {
     public static void main(String[] args) {
 
-        // 5 goods
+        // 4 goods
         double price1 = 35.23;
         double price2 = 45.34;
         double price3 = 56.78;
         double price4 = 22.45;
-        double price5 = 78.78;
 
-        double price6 = 455.55;
+        double avg = (price1 + price2 + price3 + price4) / 4;
+        System.out.println("Total avg price of all goods: " + avg);
 
-        double sum = price1 + price2 + price3 + price4 + price5;
-        System.out.println("Total price of all goods: " + sum);
-
-        double avg = sum/5;
-        System.out.println("Average price of all goods: " + avg);
 
         // int[] array;
-        double[] prices = new double[6];
+        double[] prices = new double[4];
 
         prices[0] = price1;
         prices[1] = price2;
         prices[2] = price3;
         prices[3] = price4;
-        prices[4] = price5;
-        prices[5] = price6;
+
 
         double arrSum = 0;
         for (int i = 0; i < prices.length; i++){
@@ -35,5 +29,13 @@ public class ArrayExamples {
         }
         System.out.println("Array: total price of all goods: "+ arrSum);
 
+
+        double sum = 0;
+        for (int i =0; i < prices.length; i++){
+            sum += prices[i];
+        }
+        System.out.println("Sum all price " + sum);
+        double average = sum / prices.length;
+        System.out.println("Avg rices: " + average);
     }
 }
