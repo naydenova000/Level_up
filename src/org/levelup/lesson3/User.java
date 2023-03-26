@@ -4,8 +4,8 @@ public class User {
     String firstName;
     String lastName;
     String age;
-
-    void User(){
-        System.out.println(this.firstName + " " + lastName + " " + age);
+    @Override
+    public String toString(){
+        return this.firstName + " " + lastName + " " + age;
     }
 }
