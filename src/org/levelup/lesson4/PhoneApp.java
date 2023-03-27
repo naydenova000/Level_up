@@ -5,7 +5,7 @@ public class PhoneApp {
         Phone informationPhone = new Phone();
         informationPhone.number = "9121233322";
         informationPhone.model = "Samsung";
-        informationPhone.weight = 186;
+        informationPhone.weight = 1.86;
         System.out.println("Номер телефона " + informationPhone.number + " модель " +
                 informationPhone.model + " вес " + informationPhone.weight);
 
@@ -17,7 +17,7 @@ public class PhoneApp {
 
         // Не понятно как сделать передачу значений массива??
         // Вывод На номер [Ljava.lang.Integer;@30f39991 было отправлено сообщение с номера [Ljava.lang.Integer;@30f39991
-        informationPhone.sendMessages(new Integer[]{3232323, 1232323});
+        informationPhone.sendMessages(new String[]{"3232323", "1232323"});
     }
 }
 

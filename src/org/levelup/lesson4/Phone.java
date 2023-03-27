@@ -3,9 +3,9 @@ package org.levelup.lesson4;
 public class Phone {
     String number;
     String model;
-    Integer weight;
+    double weight;
 
-    Phone(String number, String model, Integer weight){
+    Phone(String number, String model, double weight){
         this.number = number;
         this.model = model;
         this.weight = weight;
@@ -30,7 +30,7 @@ public class Phone {
         System.out.println("Вызов от " + name + " по номеру " + number);
     }
 
-    void sendMessages(Integer[] numbers){
+    void sendMessages(String[] numbers){
         System.out.println("На номер "+ numbers + " было отправлено сообщение с номера " + numbers);
     }
 
